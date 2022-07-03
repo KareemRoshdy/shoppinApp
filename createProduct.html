@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/createProduct.css" />
+    <title>Create Product</title>
+  </head>
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a href="index.html" class="logo"> Shopping App </a>
+
+      <!-- NAVBAR -->
+      <nav class="nav_bar" id="nav_bar">
+        <ul class="menu_links" id="menu_links">
+          <li><a href="login.html">Sign In</a></li>
+          <li><a href="register.html">Sign Up</a></li>
+        </ul>
+        <ul id="user_info">
+          <li>
+            <i class="fas fa-user"></i>
+            <a href="#" id="user"></a>
+          </li>
+          <li class="shopping_cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="num_of_products"></span>
+          </li>
+          <li class="favorite_cart">
+            <i class="fas fa-bookmark"></i>
+            <span class="num_of_fav"></span>
+          </li>
+          <li><a href="login.html">LOG OUT</a></li>
+        </ul>
+        <ul class="products_list">
+          <div class="content"></div>
+          <li>
+            <a class="viewAllProducts" href="cartProducts.html"
+              >View All Products</a
+            >
+          </li>
+        </ul>
+        <ul class="products_fav_list">
+          <div class="content"></div>
+          <li>
+            <a href="favorites.html" class="viewAllProducts"
+              >View All Products</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="create_product_page">
+      <h1>Create New Product</h1>
+      <form id="product_form">
+        <div class="upload_img">
+          <div class="img">
+            <!-- <img src="C:\fakepath\product-1.webp" alt="" /> -->
+          </div>
+          <div class="input_box">
+            <input
+              type="file"
+              placeholder="Add Product Image"
+              id="product_img"
+            />
+            <input type="text" placeholder="Product Name" id="product_name" />
+            <textarea
+              name=""
+              placeholder="Product Info"
+              id="product_info"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="size">
+              <span>Product Size: </span>
+              <select name="" id="size">
+                <option value="" hidden>Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <input
+              type="number"
+              name=""
+              id="product_price"
+              placeholder="Add Product Price"
+            />
+          </div>
+        </div>
+        <button class="btn" id="create_product">Create Product</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Created by
+        <a href="https://www.facebook.com/kareem.roshdy.796" target="_blank"
+          >Kareem Roshdy</a
+        >
+        || &copy; 2022
+      </p>
+    </footer>
+    <script src="js/checkLogin.js"></script>
+    <script src="js/createProduct.js"></script>
+  </body>
+</html>

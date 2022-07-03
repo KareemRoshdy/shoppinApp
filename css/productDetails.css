@@ -1,0 +1,40 @@
+.item_details {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item_details .productImg {
+  flex: 1 1 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_details .productImg img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.details {
+  flex: 1 1 20rem;
+}
+
+.details h2 {
+  color: #0e3356;
+}
+
+.details p {
+  color: #777;
+  margin: 1rem 0;
+}
+
+.back {
+  background: #0e3356;
+}
+
+.back:hover {
+  background: #000;
+}
